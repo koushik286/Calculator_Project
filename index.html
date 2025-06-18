@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculator_project</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="calculator">
+    <!-- Title -->
+    <div class="title">Naa Calculator</div>
+
+    <!-- Display -->
+    <input type="text" id="display" class="display" readonly>
+
+    <!-- Buttons -->
+    <div class="buttons">
+      <button onclick="clearDisplay()" class="buttonS function">C</button>
+      <button onclick="deleteLast()" class="buttonS function">DEL</button>
+      <button onclick="appendValue('%')" class="buttonS function">%</button>
+      <button onclick="appendValue('/')" class="buttonS operator">÷</button>
+
+      <button onclick="appendValue('7')" class="buttonS number">7</button>
+      <button onclick="appendValue('8')" class="buttonS number">8</button>
+      <button onclick="appendValue('9')" class="buttonS number">9</button>
+      <button onclick="appendValue('*')" class="buttonS operator">×</button>
+
+      <button onclick="appendValue('4')" class="buttonS number">4</button>
+      <button onclick="appendValue('5')" class="buttonS number">5</button>
+      <button onclick="appendValue('6')" class="buttonS number">6</button>
+      <button onclick="appendValue('-')" class="buttonS operator">−</button>
+
+      <button onclick="appendValue('1')" class="buttonS number">1</button>
+      <button onclick="appendValue('2')" class="buttonS number">2</button>
+      <button onclick="appendValue('3')" class="buttonS number">3</button>
+      <button onclick="appendValue('+')" class="buttonS operator">+</button>
+
+      <button onclick="appendValue('0')" class="buttonS number zero">0</button>
+      <button onclick="appendValue('.')" class="buttonS number">.</button>
+      <button onclick="calculate()" class="buttonS operator">=</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
